@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="Style.css">
+    <title>Stone-Paper-Scissor</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="he1">
+                <h2>Rock</h2>
+                <h2>Paper</h2>
+                <h2>Scissors</h2>
+            </div>
+            <div class="scoreBoard">
+                <h3>Computer <br> Score</h3>
+                <span class="score" id="cmp_score">0</span>
+            </div>
+            <div class="scoreBoard">
+                <h3>Your<br>Score</h3>
+                <span class="score" id="your_score">0</span>
+            </div>
+        </header>
+        <main id="main">
+            <button class ="btn-circle btn-paper pick" data-choice="paper">
+              <span class="wrapper">
+                <img src="paper.png" alt="">
+              </span>
+            </button>
+            <button class ="btn-circle btn-scissors pick"data-choice="scissors">
+              <span class="wrapper">
+                <img src="scissors.png" alt="">
+              </span>
+            </button>
+            <button class ="btn-circle btn-rock pick"data-choice="rock">
+              <span class="wrapper">
+                <img src="rock.png" alt="">
+              </span>
+            </button>
+          </main> 
+        <div class="game-rules" id="rules">  
+            <button class="Close-rules"><h1>X</h1></button>
+            <h2>Game Rules</h2>
+            <ul>
+                <li><span>Rock beats scissors,scissors beat paper, and paper beats rock</span></li>
+                <li><span>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</span></li>
+                <li><span>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</span></li>
+                <li><span>If both players lay down the same hand, each player lays down another hand</span></li>
+            </ul>
+        </div>
+        <div class="footer1" id="footer1">
+            <button class="Check_rules">Rules</button>
+        </div>
+
+        <div class="footer2" id="footer2">
+          <button class="chrules">Rules</button>
+          <button onclick="location.href='hurray.html'">Next</button>
+      </div>
+    </div>  
+
+    <div class="selections" id="selections">
+      <div>
+        <h3>You picked</h3>
+      <button class ="btn-circle btn-paper" id="user_select">
+        <span class="wrapper">
+          <img src="paper.png" alt="">
+        </span>
+      </button>
+      </div>
+      <div>
+        <h2>
+          <span id="res-text">
+            You Won
+          </span>
+        </h2> 
+        <button class="opt" id="opt">
+          <span id="btn-text">Play Again</span>
+        </button>
+      </div>
+      <div>
+        <h3>PC picked</h3>
+      <button class ="btn-circle btn-scissors" id="computer_select">
+        <span class="wrapper">
+          <img src="scissoor.png" alt="">
+        </span>
+      </button>
+      </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
